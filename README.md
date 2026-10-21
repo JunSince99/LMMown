@@ -1,4 +1,11 @@
-# Launchyard: JSON translation checker
+# Launchyard: free browser and local tools
+
+| Task | Browser tool | Source |
+| --- | --- | --- |
+| Print comes out too small or too large | [Print scale calculator and A4/Letter PDF proof](https://launchyard-free-tools.pink-map-7606.chatgpt.site/print-scale/?utm_source=github) | [Print diagnostic guide and PDF generator](tools/print-scale/) |
+| Missing translation keys or changed variables | [JSON translation checker](https://launchyard-free-tools.pink-map-7606.chatgpt.site/locale/?utm_source=github) | [Local checker](tools/locale-check/) |
+
+## JSON translation checker
 
 Compare two JSON locale files for missing keys, empty strings and changed `{name}` or `{{name}}` variables. Run locally with no dependencies, account, model API or telemetry.
 
@@ -39,7 +46,7 @@ Mature free alternatives exist, including [Lingual i18n-check](https://github.co
 
 ## Privacy and feedback
 
-The CLI never uploads files or sends analytics. The separate browser site processes JSON locally and offers optional anonymous usage sharing and an optional feedback form. Its form does not provide replies. No account, paid repair service or subscription is required or currently offered. Future paid repair is a research hypothesis, not included functionality.
+The CLI never uploads files or sends analytics. The separate browser site processes JSON locally and offers optional anonymous usage sharing and an optional feedback form. Its form does not provide replies. No account, paid repair service or subscription is required or currently offered. No paid repair or subscription is planned under the current advertising-only experiment; no ads are currently active.
 
 [Privacy details](https://launchyard-free-tools.pink-map-7606.chatgpt.site/privacy/). Please do not post confidential translation files, credentials, personal data or customer records in public issues. There is no promised support response time.
 
