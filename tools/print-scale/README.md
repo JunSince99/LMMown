@@ -39,3 +39,13 @@ The hosted page counts aggregate HTML requests, offers optional session-based ac
 References: [Adobe on scaling printed pages](https://helpx.adobe.com/uk/acrobat/kb/scale-or-resize-printed-pages.html) and [Adobe Reader printing options](https://helpx.adobe.com/uk/reader/desktop/print-pdfs.html).
 
 MIT licensed under this repository's LICENSE.
+
+## Run the standalone browser version
+
+The complete standalone UI is included as `index.html`, `app.mjs`, `core.mjs` and `style.css`. From the repository root, run:
+
+```sh
+python -m http.server 8080 --directory tools/print-scale
+```
+
+Open http://localhost:8080/ in a browser. This standalone version has no analytics or feedback endpoint. The separate hosted Site adds the optional research controls described above; its calculation/PDF core is the same. The UI and source were developed with AI assistance.
