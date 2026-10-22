@@ -4,6 +4,8 @@
 
 If a 100 mm reference prints too small, changing the image's DPI metadata is not enough to fix the print workflow. First match A4 or US Letter in both the document and printer settings, disable Fit/Shrink and borderless enlargement, print one proof, and measure horizontally and vertically.
 
+![Hosted v8 interface in a local browser; the standalone UI below is an earlier version](../../docs/print-size-check.png)
+
 ## Print a proof before a full batch
 
 1. Open the browser tool and select the paper actually loaded.
@@ -30,7 +32,7 @@ Change both `a4` values to `letter` for US Letter. Open the PDF in your usual pr
 
 ## Verification and limits
 
-The generator uses 72 PDF points per inch and 25.4 millimetres per inch. Arithmetic, PDF byte offsets/stream lengths, page sizes and the 100 mm square were checked; a separate PDF parser confirmed the geometry. No physical printer test or complete browser verification has been performed. Source was developed with generative AI assistance.
+The generator uses 72 PDF points per inch and 25.4 millimetres per inch. Arithmetic, PDF byte offsets/stream lengths, page sizes and the 100 mm square were checked; a separate PDF parser confirmed the geometry. No physical printer test has been performed. The hosted v8 interface was subsequently tested in a local browser at desktop/mobile sizes for A4/Letter downloads, input/result states, consent, feedback and route behavior. This does not verify production delivery or every printer driver. Source was developed with generative AI assistance.
 
 The hosted page counts aggregate HTML requests, offers optional session-based action sharing, and accepts optional anonymous feedback. Measurements are not sent. These records are not unique people or proof of a successful print. The local generator sends nothing.
 

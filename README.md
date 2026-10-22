@@ -1,9 +1,38 @@
-# Launchyard: free browser and local tools
+# Launchyard — print size check
 
-| Task | Browser tool | Source |
-| --- | --- | --- |
-| Print comes out too small or too large | [Print scale calculator and A4/Letter PDF proof](https://launchyard-free-tools.pink-map-7606.chatgpt.site/print-scale/?utm_source=github) | [Print diagnostic guide and PDF generator](tools/print-scale/) |
-| Missing translation keys or changed variables | [JSON translation checker](https://launchyard-free-tools.pink-map-7606.chatgpt.site/locale/?utm_source=github) | [Local checker](tools/locale-check/) |
+A free browser tool for patterns, templates and artwork that print too small or too large.
+
+**[Open Print size check](https://launchyard-free-tools.pink-map-7606.chatgpt.site/print-scale/?utm_source=github)** · **[Printing guide and local source](tools/print-scale/)**
+
+![Print size check: A4/Letter test-sheet download beside width and height measurements](docs/print-size-check.png)
+
+*Screenshot of the hosted v8 interface in a local browser, 21 October 2026. It is not a photograph of a physical print or evidence of customer use. The standalone source has an earlier interface and the same calculation/PDF core.*
+
+## Print one test before the whole job
+
+1. Choose A4 or US Letter and download the one-page test PDF.
+2. Print at **Actual size / 100%**, with Fit, Shrink and borderless enlargement off.
+3. Measure the printed 100 × 100 mm square horizontally and vertically with a physical ruler.
+4. Enter both measurements. The tool suggests a trial correction for a uniform size error, or explains why one percentage cannot correct unequal axes.
+5. Print and measure another test before printing the full pattern or batch.
+
+For example, **95 × 95 mm at 100%** gives a trial setting of **105.263%**. **95 × 100 mm** requires remeasurement and a settings check, rather than a single correction. These are synthetic examples.
+
+No account, file upload or model API is required. Measurements are processed in your browser. The hosted site counts aggregate page requests, has optional action sharing and accepts optional anonymous feedback; those are not unique-person counts. [Privacy details](https://launchyard-free-tools.pink-map-7606.chatgpt.site/privacy/).
+
+## What has and has not been checked
+
+- PDF geometry, page sizes, arithmetic and byte structure were checked, including with a separate PDF parser.
+- The hosted v8 interface was tested locally in a browser at desktop/mobile sizes for downloads, input/result states and feedback/consent behavior.
+- A physical printer test has **not** been performed. Local browser checks do not verify production delivery or every printer driver.
+- The 0.5 mm axis-difference threshold is a diagnostic assumption, not a manufacturer's tolerance. For sewing patterns, verify the designer's test square before cutting fabric.
+
+No advertising scripts, checkout or subscriptions are currently active. AI-assisted development; MIT licensed under [LICENSE](LICENSE). No guaranteed support response time.
+
+## Other retained tool
+
+<details>
+<summary>JSON translation checker — browser and local CLI</summary>
 
 ## JSON translation checker
 
@@ -53,3 +82,6 @@ The CLI never uploads files or sends analytics. The separate browser site proces
 Code and documentation were developed with generative AI assistance and checked with the supplied structural examples. Example Spanish has not received independent native-speaker review. The checker itself calls no AI model.
 
 MIT licensed; see LICENSE.
+
+
+</details>
