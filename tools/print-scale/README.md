@@ -4,7 +4,7 @@
 
 If a 100 mm reference prints too small, changing the image's DPI metadata is not enough to fix the print workflow. First match A4 or US Letter in both the document and printer settings, disable Fit/Shrink and borderless enlargement, print one proof, and measure horizontally and vertically.
 
-![Hosted v8 interface in a local browser; the standalone UI below is an earlier version](../../docs/print-size-check.png)
+![Print workflow interface, shared by hosted v8 and the standalone version](../../docs/print-size-check.png)
 
 ## Print a proof before a full batch
 
@@ -51,3 +51,5 @@ python -m http.server 8080 --directory tools/print-scale
 ```
 
 Open http://localhost:8080/ in a browser. This standalone version has no analytics or feedback endpoint. The separate hosted Site adds the optional research controls described above; its calculation/PDF core is the same. The UI and source were developed with AI assistance.
+
+The standalone interface was synchronized with hosted v8 and locally browser-checked for A4/Letter downloads, correct/uneven results, clearing stale results after edits, and mobile layout. It makes no telemetry or feedback requests. Its links to the separate hosted tools are clearly external; no physical printer test has been performed.

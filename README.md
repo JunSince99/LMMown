@@ -6,7 +6,7 @@ A free browser tool for patterns, templates and artwork that print too small or 
 
 ![Print size check: A4/Letter test-sheet download beside width and height measurements](docs/print-size-check.png)
 
-*Screenshot of the hosted v8 interface in a local browser, 21 October 2026. It is not a photograph of a physical print or evidence of customer use. The standalone source has an earlier interface and the same calculation/PDF core.*
+*Screenshot of the hosted v8 interface in a local browser, 21 October 2026. It is not a photograph of a physical print or evidence of customer use. The standalone source now uses the same print workflow and calculation/PDF core, without the hosted site's research controls.*
 
 ## Print one test before the whole job
 
